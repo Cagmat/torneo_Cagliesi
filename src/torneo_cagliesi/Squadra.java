@@ -9,5 +9,5 @@ package torneo_cagliesi;
  * @author B045_04
  */
 public class Squadra {
-    System.out.println("Hello world");
+    System.out.println("Test Squadra");
 }
