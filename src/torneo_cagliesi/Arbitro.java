@@ -9,5 +9,5 @@ package torneo_cagliesi;
  * @author B045_08
  */
 public class Arbitro {
-    System.out.println("Hello World!");
+    System.out.println("Test Squadra");
 }
