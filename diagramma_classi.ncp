@@ -1,0 +1,124 @@
+<Project>
+  <Name>torneo</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>torneo</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Amministratore</Name>
+        <Access>Public</Access>
+        <Location left="523" top="473" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private Torneo torneo</Member>
+        <Member type="Field">private String cognome</Member>
+        <Member type="Method">public void creaTorneo(String nome)</Member>
+        <Member type="Constructor">public Amministratore(String nome, String cognome, Torneo torneo)</Member>
+        <Member type="Method">public void pianificaPartita(Partita partita)</Member>
+        <Member type="Method">public void assegnaArbitro(Arbitro arbitro, Partita partita)</Member>
+        <Member type="Method">public void visualizzaClassifica()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Torneo</Name>
+        <Access>Public</Access>
+        <Location left="1035" top="150" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nominativo</Member>
+        <Member type="Field">private ArrayList&lt;Partita&gt; partite</Member>
+        <Member type="Field">private ArrayList&lt;Arbitro&gt; arbitri</Member>
+        <Member type="Field">private Classifica classifica</Member>
+        <Member type="Field">private ArrayList&lt;Squadra&gt; squadre</Member>
+        <Member type="Constructor">public Torneo(String nominativo, Classifica classifica)</Member>
+        <Member type="Method">public void visualizzaClassifica()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Squadra</Name>
+        <Access>Public</Access>
+        <Location left="709" top="500" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private ArrayList&lt;Giocatore&gt; giocatori</Member>
+        <Member type="Field">private int punteggio</Member>
+        <Member type="Constructor">public Squadra(String nome, int punteggio)</Member>
+        <Member type="Method">public void aggiungiGiocatore(Giocatore g)</Member>
+        <Member type="Method">public void rimuoviGiocatore(Giocatore g)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Giocatore</Name>
+        <Access>Public</Access>
+        <Location left="976" top="457" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private String cognome</Member>
+        <Member type="Constructor">public Giocatore(String nome, String cognome)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Partita</Name>
+        <Access>Public</Access>
+        <Location left="789" top="150" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int idpartita</Member>
+        <Member type="Field">private Squadra squadra1</Member>
+        <Member type="Field">private Squadra squadra2</Member>
+        <Member type="Method">public String inserisciRisultato()</Member>
+        <Member type="Constructor">public Partita(Squadra s1, Squadra s2, int idpartita)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Arbitro</Name>
+        <Access>Public</Access>
+        <Location left="523" top="150" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private ArrayList&lt;Partita&gt; partiteAssegnate</Member>
+        <Member type="Constructor">public Arbitro(String nome)</Member>
+        <Member type="Method">public void inserisciRisultato(Partita p)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

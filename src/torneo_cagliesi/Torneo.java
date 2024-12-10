@@ -3,10 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package torneo_cagliesi;
-
+ 
 /**
  *
- * @author B045_05
+ * @author Cagliesi Matteo
+ * @see scheda esercitazione
  */
 public class Torneo {
 
@@ -14,7 +15,7 @@ public class Torneo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
