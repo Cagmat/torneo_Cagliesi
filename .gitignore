@@ -1,0 +1,91 @@
+# Sistemi operativi
+.DS_Store
+Thumbs.db
+
+# File temporanei
+*.swp
+*.swo
+*.tmp
+*.log
+
+# IDE/Editor
+.vscode/
+.idea/
+*.iml
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.class
+*.jar
+*.war
+*.ear
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.jnilib
+*.class
+*.java~
+*.log
+out/
+*.project
+*.settings
+
+# File generati da Maven
+target/
+*.log
+dependency-reduced-pom.xml
+release.properties
+*.releaseBackup
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+*.dot
+*.uml
+maven-status/
+*.idea/
+
+# File generati da Gradle
+.gradle/
+build/
+
+# File generati da IntelliJ IDEA
+out/
+.idea/
+*.iml
+
+# Logs e debugging
+*.log
+debug.log
+
+# Configurazioni specifiche utente
+*.env.local
+*.env.*
+.envrc
+.env.*
+local_settings.py
+
+# File compressi
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+
+# File binari compilati
+*.exe
+*.dll
+*.o
+*.obj
+*.so
+*.dylib
+*.out
+*.elf
+
